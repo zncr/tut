@@ -5,40 +5,31 @@
 # print(test)
 
 # Duplicate in a list
-def duplicates(numberlist):
-    result = []
-    numberlist.sort()
-    for i in range(1,len(numberlist)):
-        if numberlist[i] == numberlist[i-1]:
-            result.append(numberlist[i])
-    return result
-
-
-mylist = duplicates([2,4,6,4,3,7,5,6,8,7,4])
-list = set(mylist)
-print(list)
-
-
-
-
-
-# def dupi_items(numbers):
+# def duplicates(numberlist):
 #     result = []
-#     numbers.sort()
-#     for i in range(1,len(numbers)):
-#         if numbers[i] == numbers[i-1]:
-#             result.append(numbers[i])
+#     numberlist.sort()
+#     for i in range(1,len(numberlist)):
+#         if numberlist[i] == numberlist[i-1]:
+#             result.append(numberlist[i])
 #     return result
+# mylist = duplicates([2,4,6,4,3,7,5,6,8,7,4])
+# # Unique Values
+# list = set(mylist)
+# print(list)
 
-# print(dupi_items([1,2,4,5,6,6]))
-# def duplicate_items(list_numbers): 
-#     result = []
-#     # Sort the array
-#     list_numbers.sort()
-#     # Iterate over the list
-#     for i in range(1,len(list_numbers)):
-#         # If previous element is the same as current, its the duplicate element
-#         if list_numbers[i] == list_numbers[i - 1]:
-#             result.append(list_numbers[i])
+def flip_vertical_axis(matrix):    
+    r = len(matrix) - 1
+    c = len(matrix[0]) - 1
+    temp = 0
+    i = 0
+    while i <= r:
+        j = 0
+        while j <= (c/2):
+            temp = matrix[i][j]
+            matrix[i][j] = matrix[i][c - j]
+            matrix[i][c - j] = temp
+            j = j + 1
+        i = i + 1
 
-#     return result
+mat[][] = mat[[1,2,3][4,5,6]]
+
