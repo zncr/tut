@@ -30,6 +30,8 @@ def flip_vertical_axis(matrix):
             matrix[i][c - j] = temp
             j = j + 1
         i = i + 1
+    return matrix
+x = [[1,0]]
+s =flip_vertical_axis([[1,2]])
 
-mat[][] = mat[[1,2,3][4,5,6]]
-
+print(s)
